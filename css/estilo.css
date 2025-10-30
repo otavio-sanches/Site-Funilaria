@@ -1,0 +1,119 @@
+
+:root {
+    --cor-fundo-page: #f0f0f0; 
+    --cor-faixa-header: #cccccc; 
+    --cor-texto-principal: #e74c3c;
+    --cor-borda-inferior: black;
+    --cor-texto-escuro: #333; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-page);
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor-faixa-header);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--cor-borda-inferior); 
+}
+
+.titulo-principal {
+    font-size: 2.5em;
+    color: var(--cor-texto-principal);
+    font-weight: bold;
+    display: block;
+}
+
+
+.container-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto 40px auto;
+}
+
+.servico-item {
+    background-color: #d3d3d3;
+    border: 1px solid var(--cor-borda-sutil);
+    border-radius: 2px;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-servico {
+    width: 100%;
+    height:300px; 
+    object-fit: cover;
+}
+
+.conteudo-servico {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.conteudo-servico h2 {
+    font-size: 1.2em;
+    color: red; 
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.conteudo-servico p {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+
+.container-botao {
+    background-color: var(--cor-faixa-header);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 0;
+    border-top: 1px solid var(--cor-borda-inferior);
+}
+
+.botao-orcamento {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.botao-orcamento:hover {
+    background-color: #c0392b; 
+}
+
+@media (max-width: 1024px) {
+    .container-servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-servicos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
