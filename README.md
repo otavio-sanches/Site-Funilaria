@@ -27,7 +27,7 @@ A estrutura de pastas será organizada da seguinte forma:
 ├── /javascript   → scripts JavaScript  
 └── /bootstrap    → arquivos e dependências do Bootstrap
 
-#Controle de Versão
+# Controle de Versão
 
 Utilizaremos o GitHub para versionamento e armazenamento do código.
 
