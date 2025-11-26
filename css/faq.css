@@ -1,0 +1,156 @@
+.faq-page {
+    padding-top: 120px;
+    padding-bottom: 4rem;
+    background-color: rgba(255, 248, 225, 0.3);
+    min-height: calc(100vh - 80px);
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.faq-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.accordion {
+    margin-bottom: 3rem;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: var(--white);
+}
+
+.accordion-button {
+    background-color: var(--white);
+    color: var(--dark);
+    font-weight: 600;
+    padding: 1.5rem 2rem;
+    border: none;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) i {
+    color: var(--white);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button i {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: rgba(229, 57, 53, 0.05);
+}
+
+.accordion-button:not(.collapsed):hover {
+    background-color: var(--primary-dark);
+}
+
+.accordion-body {
+    padding: 1.5rem 2rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 1rem;
+    background-color: var(--white);
+}
+
+.faq-cta {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-cta p {
+    font-size: 1.25rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-contact-faq {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+.btn-contact-faq:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+    color: var(--white);
+}
+
+@media (max-width: 767px) {
+    .faq-page {
+        padding-top: 100px;
+        padding-bottom: 3rem;
+    }
+    
+    .faq-header h1 {
+        font-size: 2rem;
+    }
+    
+    .faq-subtitle {
+        font-size: 1rem;
+    }
+    
+    .accordion-button {
+        padding: 1.25rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .accordion-body {
+        padding: 1.25rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .faq-cta {
+        padding: 1.5rem;
+    }
+    
+    .faq-cta p {
+        font-size: 1.125rem;
+    }
+}
+

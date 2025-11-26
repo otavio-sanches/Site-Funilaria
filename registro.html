@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funilaria Mestre do Reparo - Seu carro, como novo de novo!</title>
-    <meta name="description" content="Especialistas em funilaria e pintura automotiva com mais de 15 anos de experiência. Qualidade e confiança em cada serviço.">
+    <title>Registro - Funilaria Mestre do Reparo</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,7 +18,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/beneficios.css">
+    <link rel="stylesheet" href="css/registro.css">
 </head>
 <body>
     <!-- Header -->
@@ -68,51 +67,29 @@
         </nav>
     </header>
 
-    <!-- Benefits Page -->
-    <section class="benefits-page">
+    <!-- Registration Page -->
+    <section class="registration-page">
+        <div class="registration-overlay"></div>
         <div class="container">
-            <div class="benefits-content">
-                <h1 class="benefits-title">Nossos Benefícios</h1>
-                <div class="benefits-description">
-                    <p>Na <strong>Funilaria Mestre do reparo</strong>, oferecemos reparos rápidos e eficientes para o seu veículo. Utilizamos técnicas modernas como o <strong>Martelinho de Ouro</strong> (PDR - Paintless Dent Repair) para pequenos amassados sem necessidade de repintura, e <strong>Funilaria Express</strong> para casos que exigem pintura e correção de amassados mais complexos.</p>
-                    <p>Nossos serviços combinam técnicas modernas, agilidade, qualidade e garantia. Evitamos longas esperas e trabalhamos com profissionais qualificados e materiais de alta qualidade para garantir a restauração total do seu veículo sem comprometer a originalidade.</p>
-                </div>
-                
-                <div class="benefits-images">
-                    <div class="benefit-image-item">
-                        <img src="public/foto1.png" alt="Trabalho profissional" class="benefit-img">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="registration-content">
+                        <h2 class="registration-title">INSIRA SEU TELEFONE PARA SE INSCREVER OU ENTRAR.</h2>
+                        <form id="phoneForm" class="phone-form">
+                            <div class="country-selector mb-3">
+                                <span class="country-label">BRASIL</span>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="tel" class="form-control phone-input" id="phone" placeholder="TELEFONE*" required>
+                            </div>
+                            <div class="consent-text mb-4">
+                                <p>AO CONTINUAR, AFIRMO QUE CONCORDO COM A <strong>POLÍTICA DE PRIVACIDADE</strong> E OS <strong>TERMOS DE USO</strong> DA FUNILARIA.</p>
+                            </div>
+                            <button type="submit" class="btn-continue">
+                                CONTINUE
+                            </button>
+                        </form>
                     </div>
-                    <div class="benefit-image-item">
-                        <img src="public/foto2.png" alt="Detalhamento automotivo" class="benefit-img">
-                    </div>
-                    <div class="benefit-image-item">
-                        <img src="public/foto3.jpg" alt="Pintura automotiva" class="benefit-img">
-                    </div>
-                </div>
-                
-                <div class="benefits-icons">
-                    <div class="benefit-icon-item">
-                        <div class="icon-circle">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <span>QUALIDADE</span>
-                    </div>
-                    <div class="benefit-icon-item">
-                        <div class="icon-circle">
-                            <i class="fas fa-truck-fast"></i>
-                        </div>
-                        <span>* ENTREGA EXPRESS</span>
-                    </div>
-                    <div class="benefit-icon-item">
-                        <div class="icon-circle">
-                            <i class="fas fa-shield-halved"></i>
-                        </div>
-                        <span>GARANTIA</span>
-                    </div>
-                </div>
-                
-                <div class="benefits-cta">
-                    <a href="registro.html" class="btn-register">Cadastre-se Agora</a>
                 </div>
             </div>
         </div>
@@ -135,5 +112,15 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Phone form submission
+        document.getElementById('phoneForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const phone = document.getElementById('phone').value;
+            // Redirect to login page with phone number
+            window.location.href = `login.html?phone=${encodeURIComponent(phone)}`;
+        });
+    </script>
 </body>
 </html>
+

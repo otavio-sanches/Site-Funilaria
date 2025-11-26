@@ -1,0 +1,371 @@
+.quote-page {
+    padding-top: 100px;
+    padding-bottom: 4rem;
+    background-color: var(--primary-dark);
+    min-height: calc(100vh - 80px);
+}
+
+.quote-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.quote-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.quote-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.quote-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-button:hover {
+    background-color: #20BA5A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    color: var(--white);
+}
+
+.quote-description {
+    color: var(--dark);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.quote-description p {
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.social-links p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon.facebook {
+    background-color: #1877F2;
+}
+
+.guarantee-badges {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.guarantee-badge {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.guarantee-badge.gold {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: var(--dark);
+}
+
+.guarantee-badge.red {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+}
+
+.guarantee-badge::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 20px;
+    background-color: var(--primary-color);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.guarantee-badge span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.btn-back {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+    padding: 1rem 2rem;
+    background-color: var(--dark);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #333;
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Scheduling Section */
+.scheduling-section {
+    margin: 3rem 0;
+    padding: 2.5rem;
+    background-color: rgba(229, 57, 53, 0.05);
+    border-radius: 12px;
+    border: 2px solid rgba(229, 57, 53, 0.1);
+}
+
+.scheduling-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.scheduling-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.scheduling-option {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scheduling-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.scheduling-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.scheduling-icon i {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.scheduling-option h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.scheduling-option p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-schedule {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+}
+
+.btn-schedule:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 57, 53, 0.4);
+    color: var(--white);
+}
+
+.scheduling-note {
+    background-color: rgba(255, 193, 7, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #FFC107;
+    margin-top: 2rem;
+}
+
+.scheduling-note p {
+    color: var(--dark);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+.scheduling-note i {
+    color: #FFC107;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 991px) {
+    .scheduling-options {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .quote-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .quote-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .guarantee-badges {
+        gap: 1rem;
+    }
+    
+    .guarantee-badge {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .scheduling-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .scheduling-title {
+        font-size: 1.5rem;
+    }
+    
+    .scheduling-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .scheduling-icon i {
+        font-size: 2rem;
+    }
+    
+    .scheduling-option {
+        padding: 1.5rem;
+    }
+    
+    .scheduling-option h4 {
+        font-size: 1.25rem;
+    }
+    
+    .scheduling-option p {
+        font-size: 0.9rem;
+    }
+    
+    .btn-schedule {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .scheduling-note {
+        padding: 1.25rem;
+    }
+    
+    .scheduling-note p {
+        font-size: 0.9rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
